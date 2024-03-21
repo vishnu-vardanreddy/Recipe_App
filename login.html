@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Login Page</title>
+<link rel="stylesheet" href="log.css"/>
+</head>
+<body>
+<div class="login">
+<form id="firstform">
+	<h2>Login</h2>
+    <label for="Fname">UserId </label><br/>
+    <input type="text" id="Fname" name="Fname" /><br/>
+    <label for="Pass">Password </label><br/>
+    <input type="Password" id="Pass" name="Pass" /><br/>
+    <input type="submit" value="Submit">
+    <input type="button" value="Forgot Password" onclick="showsecondform()">
+    <input type="button" value="Reset" onclick="showThirdform()">
+</form>
+</div>
+
+<div class="login">
+<table cellspacing="3" align="center">
+    <tr>
+        <td>
+            <form id="secondform">
+				<h2>Forgot Password</h2>
+                <label>Email Id</label><br/>
+                <input type="text"/>
+                <br/>
+                <label>Password</label><br/>
+                <input type="Password"/>
+                <br/>
+                <label>New Password</label><br/>
+                <input type="Password"/><br/>
+                <label>Conform Password</label><br/>
+                <input type="Password"/>
+                <input type="submit" value="Submit"/>
+            </form>
+        </td>
+    </tr>
+</table>
+</div>
+<div class="login">
+<table cellspacing="3" align="center">
+    <tr>
+        <td>
+            <form id="Thirdform" >
+				<h2>Reset  Password</h2>
+                <label>UserId</label><br/>
+                <input type="text"/>
+                <br/>
+                <label>New Password</label><br/>
+                <input type="Password"/><br/>
+                <label>Conform Password</label><br/>
+                <input type="Password"/>
+                <input type="submit" value="Submit"/>
+            </form>
+        </td>
+    </tr>
+</table>
+</div>
+<script>
+    function showsecondform() {
+        document.getElementById("firstform").style.display = "none";
+        document.getElementById("secondform").style.display = "block";
+        document.getElementById("Thirdform").style.display = "none";
+    }
+
+    function showThirdform() {
+        document.getElementById("firstform").style.display = "none";
+        document.getElementById("secondform").style.display = "none";
+        document.getElementById("Thirdform").style.display = "block";
+    }
+</script>
+</body>
+</html>

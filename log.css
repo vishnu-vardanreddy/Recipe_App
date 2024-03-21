@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+	background-image:url(bgbg.jpg);
+	background-size: cover;
+}
+
+.login {
+    border: 1px solid black;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.5) url('bgc.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    margin: 20px;
+}
+h2{
+	color: White;
+}
+form {
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+	text-align: top;		/*valign*/
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+[type="password"] {
+    background: rgba(255, 255, 255, 0.3);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    background: rgb(45, 126, 231);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+#secondform,
+#Thirdform {
+    display: none;
+}
